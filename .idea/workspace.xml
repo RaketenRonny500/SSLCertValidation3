@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c6183a0-77b5-4788-86ec-9069a06ce496" name="Changes" comment="HTML+EventListener+CertCheck rdy" />
+    <list default="true" id="0c6183a0-77b5-4788-86ec-9069a06ce496" name="Changes" comment="HTML+EventListener+CertCheck rdy">
+      <change afterPath="$PROJECT_DIR$/certList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saveFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +32,30 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <branch-grouping />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RaketenRonny500"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="449ad7df-d25e-4866-b8db-e7e969815ccd" />
+        <option name="url" value="https://github.com/RaketenRonny500/SSLCertValidation" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -46,7 +78,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master2&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.17.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.17.0&quot;,
@@ -59,8 +91,10 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -103,6 +137,10 @@
       <workItem from="1691065740054" duration="817000" />
       <workItem from="1691069809755" duration="10091000" />
       <workItem from="1691082095202" duration="700000" />
+      <workItem from="1691082805564" duration="268000" />
+      <workItem from="1691422217764" duration="4683000" />
+      <workItem from="1691500257220" duration="3250000" />
+      <workItem from="1691566236249" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary="HTML+EventListener+CertCheck rdy">
       <option name="closed" value="true" />
@@ -112,7 +150,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691082768054</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HTML+EventListener+CertCheck rdy">
+      <option name="closed" value="true" />
+      <created>1691082860019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691082860019</updated>
+    </task>
+    <task id="LOCAL-00003" summary="HTML+EventListener+CertCheck rdy">
+      <option name="closed" value="true" />
+      <created>1691083046554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691083046554</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +175,17 @@
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
