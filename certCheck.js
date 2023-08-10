@@ -1,17 +1,26 @@
 'use strict';
 const tls = require('tls');
 
-const socket = tls.connect({
-    host: 'xhamster.com',
-    port: 443,
-    servername: 'xhamster.com'
-}, () => {
-    const peerCertificate = socket.getPeerCertificate();
-    console.log(peerCertificate);
-    socket.destroy();
-});
-socket.on('error', err => {
-    console.log('Error: ' + err.message);
-});
-socket.on('close', () => {
-});
+class certCheck {
+    socket;
+    constructor(host, port, name) {
+        this.socket = tls.connect({
+            host: host,
+            port: port,
+            servername: name
+        });
+        this.socket.on('error', err => {
+            console.log('Error: ' + err.message);
+        });
+        this.socket.on('close', () => {
+        });
+    }
+    check(){
+            const peerCertificate = this.socket.getPeerCertificate();
+            console.log(peerCertificate)
+            const today = new Date()
+            return new Date(peerCertificate.valid_to) > today && new Date(peerCertificate.valid_from) < today
+    }
+}
+
+module.exports = certCheck

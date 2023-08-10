@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c6183a0-77b5-4788-86ec-9069a06ce496" name="Changes" comment="HTML+EventListener+CertCheck rdy">
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/certCheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/certCheck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +138,8 @@
       <workItem from="1691566236249" duration="124000" />
       <workItem from="1691581364644" duration="3235000" />
       <workItem from="1691588166999" duration="2153000" />
+      <workItem from="1691603466392" duration="31000" />
+      <workItem from="1691665666609" duration="3826000" />
     </task>
     <task id="LOCAL-00001" summary="HTML+EventListener+CertCheck rdy">
       <option name="closed" value="true" />
@@ -162,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691083046554</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HTML+EventListener+CertCheck rdy">
+      <option name="closed" value="true" />
+      <created>1691603487201</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691603487201</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
