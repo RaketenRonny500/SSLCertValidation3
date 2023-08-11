@@ -3,11 +3,10 @@ const tls = require('tls');
 
 class certCheck {
     socket;
-    constructor(host, port, name) {
+    constructor(host, port) {
         this.socket = tls.connect({
             host: host,
             port: port,
-            servername: name
         });
         this.socket.on('error', err => {
             console.log('Error: ' + err.message);
