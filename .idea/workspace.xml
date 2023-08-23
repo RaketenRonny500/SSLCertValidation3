@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c6183a0-77b5-4788-86ec-9069a06ce496" name="Changes" comment="HTML+EventListener+CertCheck rdy">
-      <change afterPath="$PROJECT_DIR$/Cert2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cron.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbSetup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/rss.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certCheck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/certList.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cert.js" beforeDir="false" afterPath="$PROJECT_DIR$/Cert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cert2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cron.js" beforeDir="false" afterPath="$PROJECT_DIR$/cron.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonify.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saveFile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,10 +99,15 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -144,7 +152,13 @@
       <workItem from="1692003229904" duration="5168000" />
       <workItem from="1692019439033" duration="5822000" />
       <workItem from="1692079632498" duration="10893000" />
-      <workItem from="1692176818623" duration="15631000" />
+      <workItem from="1692176818623" duration="15841000" />
+      <workItem from="1692268569210" duration="79000" />
+      <workItem from="1692558096138" duration="4252000" />
+      <workItem from="1692606257302" duration="1089000" />
+      <workItem from="1692608378553" duration="9248000" />
+      <workItem from="1692684378490" duration="32000" />
+      <workItem from="1692684423263" duration="10303000" />
     </task>
     <task id="LOCAL-00001" summary="HTML+EventListener+CertCheck rdy">
       <option name="closed" value="true" />
@@ -186,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691749599512</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="HTML+EventListener+CertCheck rdy">
+      <option name="closed" value="true" />
+      <created>1692217257697</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692217257697</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
