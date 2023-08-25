@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c6183a0-77b5-4788-86ec-9069a06ce496" name="Changes" comment="HTML+EventListener+CertCheck rdy">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbSetup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/rss.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cert.js" beforeDir="false" afterPath="$PROJECT_DIR$/Cert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cert2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cron.js" beforeDir="false" afterPath="$PROJECT_DIR$/cron.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/rss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/www/rss.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +30,7 @@
         <option value="package" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -90,6 +85,7 @@
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.17.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.17.0&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/IntelliJProjects/SSLCertValidation&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -112,9 +108,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IntelliJProjects\SSLCertValidation\www" />
       <recent name="C:\IntelliJProjects\SSLCertValidation" />
       <recent name="C:\IntelliJProjects\SSLCertValidation\Modules" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -159,6 +161,10 @@
       <workItem from="1692608378553" duration="9248000" />
       <workItem from="1692684378490" duration="32000" />
       <workItem from="1692684423263" duration="10303000" />
+      <workItem from="1692779639586" duration="142000" />
+      <workItem from="1692779793485" duration="16000" />
+      <workItem from="1692955088545" duration="5622000" />
+      <workItem from="1692960928674" duration="5252000" />
     </task>
     <task id="LOCAL-00001" summary="HTML+EventListener+CertCheck rdy">
       <option name="closed" value="true" />
@@ -208,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692217257697</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="HTML+EventListener+CertCheck rdy">
+      <option name="closed" value="true" />
+      <created>1692779719794</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692779719794</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

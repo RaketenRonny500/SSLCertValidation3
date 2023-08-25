@@ -4,7 +4,7 @@
         <title>Certificate invalid</title>
         <link>certcheck.polizei.nrw</link>
         <description>A certificate expired or is invalid</description>
-        <lastBuildDate>Tue, 22 Aug 2023 12:34:01 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Aug 2023 13:04:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>CertCheck</generator>
         <language>en</language>
@@ -17,50 +17,10 @@
         <category>Certificates about to expire</category>
         <category>Expired Certificates</category>
         <item>
-            <title><![CDATA[reddit.com - certificate expired.]]></title>
-            <link>certcheck.polizei.nrw/#2521.2324159464793</link>
-            <guid>certcheck.polizei.nrw/#2521.2324159464793</guid>
-            <pubDate>Tue, 22 Aug 2023 12:34:03 GMT</pubDate>
-            <description><![CDATA[Certificate invalid]]></description>
-            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[zeit.de - certificate expired.]]></title>
-            <link>certcheck.polizei.nrw/#6592.435687424551</link>
-            <guid>certcheck.polizei.nrw/#6592.435687424551</guid>
-            <pubDate>Tue, 22 Aug 2023 12:34:04 GMT</pubDate>
-            <description><![CDATA[Certificate invalid]]></description>
-            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[reddit.com - certificate expired.]]></title>
-            <link>certcheck.polizei.nrw/#668.3087038378454</link>
-            <guid>certcheck.polizei.nrw/#668.3087038378454</guid>
-            <pubDate>Tue, 22 Aug 2023 12:34:15 GMT</pubDate>
-            <description><![CDATA[Certificate invalid]]></description>
-            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[zeit.de - certificate expired.]]></title>
-            <link>certcheck.polizei.nrw/#2157.6578118366087</link>
-            <guid>certcheck.polizei.nrw/#2157.6578118366087</guid>
-            <pubDate>Tue, 22 Aug 2023 12:34:16 GMT</pubDate>
-            <description><![CDATA[Certificate invalid]]></description>
-            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[reddit.com - certificate expired.]]></title>
-            <link>certcheck.polizei.nrw/#8391.342093069772</link>
-            <guid>certcheck.polizei.nrw/#8391.342093069772</guid>
-            <pubDate>Tue, 22 Aug 2023 12:34:28 GMT</pubDate>
-            <description><![CDATA[Certificate invalid]]></description>
-            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[zeit.de - certificate expired.]]></title>
-            <link>certcheck.polizei.nrw/#1888.25466545947</link>
-            <guid>certcheck.polizei.nrw/#1888.25466545947</guid>
-            <pubDate>Tue, 22 Aug 2023 12:34:29 GMT</pubDate>
+            <title><![CDATA[alternate.de - certificate expired.]]></title>
+            <link>certcheck.polizei.nrw/#4627.035903241143</link>
+            <guid>certcheck.polizei.nrw/#4627.035903241143</guid>
+            <pubDate>Fri, 25 Aug 2023 13:54:23 GMT</pubDate>
             <description><![CDATA[Certificate invalid]]></description>
             <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
         </item>

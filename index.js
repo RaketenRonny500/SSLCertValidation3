@@ -5,7 +5,6 @@ const app = express();
 const db = new sqlite3.Database('./hosts.db');
 const auth = require('./auth.js')
 
-
 app.use(express.json())
 app.use(express.static("www"))
 app.use(auth)
