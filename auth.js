@@ -1,4 +1,4 @@
-const token = process.env.AUTH_TOKEN || "7F18B7C8A5016BFC9F99F34CF511C46E"
+const token = "7F18B7C8A5016BFC9F99F34CF511C46E"
 
 
 function auth(req, res, next) {

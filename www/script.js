@@ -1,31 +1,30 @@
-document.getElementById('addHostForm').addEventListener('submit', addHost);
-
-function addHost(event) {
-    event.preventDefault(); // Prevent the default form submission
+document.getElementById('hostForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
 
     const hostname = document.getElementById('hostname').value;
 
-    fetch(`/host`, {
+    // Retrieve the token from session storage
+    const token = sessionStorage.getItem('token');
+
+    // Construct the request body
+    const requestBody = JSON.stringify({ hostname });
+
+    // Make a POST request to the backend
+    fetch('/host', {
         method: 'POST',
         headers: {
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
-            // Removed the 'Authorization' header
         },
-        body: JSON.stringify({ hostname })
+        body: requestBody
     })
-        .then(response => {
-            if (!response.ok) {
-                return response.text().then(text => {
-                    throw new Error(`Failed to add host: ${text}`);
-                });
-            }
-            return response.json();
-        })
-        .then(() => {
-            document.getElementById('message').textContent = 'Host added successfully!';
+        .then(response => response.json())
+        .then(data => {
+            // Handle the response from the server
+            document.getElementById('message').innerText = 'Host added successfully!';
         })
         .catch(error => {
-            console.error("An error occurred:", error);
-            document.getElementById('message').textContent = 'Failed to add host. Please try again.';
+            console.error('Error:', error);
+            document.getElementById('message').innerText = 'An error occurred while adding the host.';
         });
-}
+});
