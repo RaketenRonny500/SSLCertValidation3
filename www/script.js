@@ -28,3 +28,4 @@ document.getElementById('hostForm').addEventListener('submit', function(e) {
             document.getElementById('message').innerText = 'An error occurred while adding the host.';
         });
 });
+
