@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Host</title>
+    <title>Host Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
-<h1>Add a New Host</h1>
-<form id="hostForm">
-    <label for="hostname">Hostname:</label>
-    <input type="text" id="hostname" name="hostname" required>
-    <button type="submit">Add Host</button>
-</form>
-<div id="message"></div>
 
-<script src="script.js"></script>
+<div class="container mt-5">
+    <h1 class="text-center">Host Management</h1>
+
+    <!-- Token Entry -->
+    <div class="form-group">
+        <label for="token">Enter Token:</label>
+        <input type="text" id="token" class="form-control" placeholder="Enter your token">
+    </div>
+    <button onclick="setToken()" class="btn btn-primary">Set Token</button>
+
+    <!-- Buttons -->
+    <div class="mt-4">
+        <button onclick="createHost()" class="btn btn-success">Create New Host</button>
+        <button onclick="getAllHosts()" class="btn btn-info">Show Hosts</button>
+    </div>
+
+    <!-- List of Hosts -->
+    <div id="hostList" class="mt-4">
+        <!-- Hosts will be displayed here -->
+    </div>
+</div>
+
 </body>
 </html>
-

@@ -1,10 +1,12 @@
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const Cron = require('./cron.js');
+const cors = require('cors');
 const app = express();
 const db = new sqlite3.Database('./hosts.db');
 const auth = require('./auth.js')
 
+app.use(cors());
 app.use(express.json())
 app.use(express.static("www"))
 app.use(auth)

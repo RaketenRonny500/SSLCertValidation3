@@ -4,7 +4,7 @@
         <title>Certificate invalid</title>
         <link>certcheck.polizei.nrw</link>
         <description>A certificate expired or is invalid</description>
-        <lastBuildDate>Fri, 25 Aug 2023 13:04:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Aug 2023 20:07:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>CertCheck</generator>
         <language>en</language>
@@ -17,10 +17,34 @@
         <category>Certificates about to expire</category>
         <category>Expired Certificates</category>
         <item>
-            <title><![CDATA[alternate.de - certificate expired.]]></title>
-            <link>certcheck.polizei.nrw/#4627.035903241143</link>
-            <guid>certcheck.polizei.nrw/#4627.035903241143</guid>
-            <pubDate>Fri, 25 Aug 2023 13:54:23 GMT</pubDate>
+            <title><![CDATA[reddit.com - certificate expired.]]></title>
+            <link>certcheck.polizei.nrw/#653.8172621134031</link>
+            <guid>certcheck.polizei.nrw/#653.8172621134031</guid>
+            <pubDate>Wed, 30 Aug 2023 20:26:29 GMT</pubDate>
+            <description><![CDATA[Certificate invalid]]></description>
+            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[discogs.com - certificate expired.]]></title>
+            <link>certcheck.polizei.nrw/#2000.1299483385892</link>
+            <guid>certcheck.polizei.nrw/#2000.1299483385892</guid>
+            <pubDate>Wed, 30 Aug 2023 20:26:52 GMT</pubDate>
+            <description><![CDATA[Certificate invalid]]></description>
+            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[discogs.com - certificate expired.]]></title>
+            <link>certcheck.polizei.nrw/#5962.950862850451</link>
+            <guid>certcheck.polizei.nrw/#5962.950862850451</guid>
+            <pubDate>Wed, 30 Aug 2023 20:27:04 GMT</pubDate>
+            <description><![CDATA[Certificate invalid]]></description>
+            <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[discogs.com - certificate expired.]]></title>
+            <link>certcheck.polizei.nrw/#1908.071764231536</link>
+            <guid>certcheck.polizei.nrw/#1908.071764231536</guid>
+            <pubDate>Wed, 30 Aug 2023 20:27:16 GMT</pubDate>
             <description><![CDATA[Certificate invalid]]></description>
             <content:encoded><![CDATA[{"valid":false}]]></content:encoded>
         </item>
