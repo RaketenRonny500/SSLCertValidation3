@@ -1,12 +1,18 @@
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const Cron = require('./cron.js');
-const cors = require('cors');
+//const cors = require('cors');
 const app = express();
 const db = new sqlite3.Database('./hosts.db');
 const auth = require('./auth.js')
 
-app.use(cors());
+// app.use(cors()); //allow origin
+app.use((req, res, next) => {
+    res.header(`Access-Control-Allow-Origin`, `*`);
+    res.header(`Access-Control-Allow-Methods`, `GET,PUT,POST,DELETE`);
+    res.header(`Access-Control-Allow-Headers`, `Content-Type`);
+    next();
+})
 app.use(express.json())
 app.use(express.static("www"))
 app.use(auth)

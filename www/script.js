@@ -1,5 +1,4 @@
 let token = '';
-const url = `${window.location.protocol}//${window.location.hostname}${window.location.port ? ':' + window.location.port : ''}`
 
 function setToken() {
     token = document.getElementById('token').value
@@ -9,7 +8,7 @@ async function createHost() {
     const hostname = prompt('Enter new hostname:')
     if (hostname) {
         try {
-            const response = await fetch(`${url}/host`, {
+            const response = await fetch(`/host`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -17,10 +16,13 @@ async function createHost() {
                 },
                 body: JSON.stringify({ hostname })
             })
-            if (!response.ok) {
-                throw new Error(`Failed to create host: ${await response.text()}`)
+            if (response.ok) {
+                // throw new Error(`Failed to create host: ${await response.text()}`)
+                await fetchHosts();
+            } else {
+                console.error(`Failed to create host: ${await response.text()}`);
             }
-            await fetchHosts();
+
         } catch (error) {
             console.error("Error creating host:", error)
         }
@@ -33,16 +35,18 @@ async function deleteHost(id) {
     const deletePrompt = confirm(`Delete host with ID: ${id}?`);
     if (deletePrompt) {
         try {
-            const response = await fetch(`${url}/host/${id}`, {
+            const response = await fetch(`/host/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': 'Bearer ' + token
                 },
             })
-            if (!response.ok) {
-                throw new Error(`Failed to delete host: ${await response.text()}`);
+            if (response.ok) {
+                await fetchHosts();
+            } else {
+                console.error(`Failed to delete host: ${await response.text()}`);
             }
-            await fetchHosts();
+
         } catch (error) {
             alert(`Error deleting host: ${error}`);
         }
@@ -53,7 +57,7 @@ async function updateHost(id, hostname) {
     const newHostname = prompt(`Please enter a new hostname for ID ${id}:`)
     if (newHostname) {
         try {
-            const response = await fetch(`${url}/host`, {
+            const response = await fetch(`/host`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -77,7 +81,7 @@ async function updateHost(id, hostname) {
 
 async function fetchHosts() {
     try {
-        const response = await fetch(`${url}/host`, {
+        const response = await fetch(`/host`, {
             headers: {
                 'Authorization': 'Bearer ' + token
             },
@@ -87,9 +91,9 @@ async function fetchHosts() {
         hostList.innerHTML = ''
         hosts.forEach(host => {
             const hostDiv = document.createElement('div')
-            hostDiv.innerHTML = `<span>ID: ${host.id}, Hostname: ${host.hostname}</span> 
+            hostDiv.innerHTML = `<span>ID: ${host.id}, Hostname: ${host.hostname}</span>
                              <button onclick="deleteHost(${host.id})" class="btn btn-danger">Delete</button>
-                             <button onclick="updateHost(${host.id}, '${host.hostname}')" class="btn btn-warning">Edit</button>`
+                             <button onclick="updateHost(${host.id}, '${host.hostname}')" class="btn btn-warning">Edit</button><hr>`
             hostList.appendChild(hostDiv)
         })
     } catch (error) {
