@@ -4,31 +4,31 @@ const rss = require('./rss.js')
 
 class Cron {
     constructor(intervalInMs) {
-        this.intervalInMs = intervalInMs;
-        this.rss = new rss();
-        this.execute();
+        this.intervalInMs = intervalInMs
+        this.rss = new rss()
+        this.execute()
     }
 
     async getHostsFromDatabase() {
         const db = new sqlite3.Database('./hosts.db', sqlite3.OPEN_READWRITE);
         return new Promise((resolve, reject) => {
             db.all('SELECT hostname FROM hosts', [], (err, rows) => {
-                db.close();
+                db.close()
                 if (err) {
-                    reject(err);
-                    return;
+                    reject(err)
+                    return
                 }
-                resolve(rows.map(row => row.hostname));
-            });
-        });
+                resolve(rows.map(row => row.hostname)) //arrow function applied to every object in original array, creates new array
+            })
+        })
     }
 
     async execute() {
         try {
-            const hosts = await this.getHostsFromDatabase();
+            const hosts = await this.getHostsFromDatabase()
             for (let i = 0; i < hosts.length; i++) {
-                const cert = new Cert(hosts[i]);
-                const validationData = await cert.getValidationData();
+                const cert = new Cert(hosts[i])
+                const validationData = await cert.getValidationData()
                 console.log(validationData, hosts[i])
                 if (!validationData.valid) {
                     this.rss.notify(hosts[i], validationData)
@@ -37,7 +37,7 @@ class Cron {
         } catch (err) {
             console.error(err);
         }
-        setTimeout(() => { this.execute() }, this.intervalInMs);
+        setTimeout(() => { this.execute() }, this.intervalInMs)
     }
 }
 

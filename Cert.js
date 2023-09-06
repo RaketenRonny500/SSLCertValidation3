@@ -4,7 +4,7 @@ const https = require('https');
 class Cert {
     _cert = undefined
     constructor(host) {
-        this.host = host;
+        this.host = host
     }
 
     async getCertificate() {
@@ -19,10 +19,10 @@ class Cert {
                 }).on('keylog', (line, tlsSocket) => tlsCert = tlsSocket.getPeerCertificate(false))
             });
 
-            this._cert = tlsCert;
-            return this._cert;
+            this._cert = tlsCert
+            return this._cert
         } catch (err) {
-            console.log(err);
+            console.log(err)
         }
     }
 
@@ -31,12 +31,12 @@ class Cert {
             const peerCertificate = await this.getCertificate();
 
             if (!peerCertificate) {
-                return { valid: false };
+                return { valid: false }
             }
 
             const currentDate = new Date();
-            const validFromDate = new Date(peerCertificate.valid_from);
-            const validToDate = new Date(peerCertificate.valid_to);
+            const validFromDate = new Date(peerCertificate.valid_from)
+            const validToDate = new Date(peerCertificate.valid_to)
 
             return {
                 valid_from: peerCertificate.valid_from,
@@ -44,7 +44,7 @@ class Cert {
                 valid: (validFromDate < currentDate && validToDate > currentDate)
             };
         } catch (err) {
-            console.log(err);
+            console.log(err)
         }
     }
 }

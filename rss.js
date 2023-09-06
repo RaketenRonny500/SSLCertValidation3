@@ -10,7 +10,7 @@ class RSS {
             language: "en", // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
             image: "http://example.com/image.png",
             favicon: "http://example.com/favicon.ico",
-            copyright: "All rights reserved 2023, RaketenRonny500",
+            copyright: "All rights reserved 2023, Cedric Bredau",
             updated: new Date(), // optional, default = today
             generator: "CertCheck", // optional, default = 'Feed for Node.js'
             author: {
@@ -21,7 +21,7 @@ class RSS {
         });
 
         this.feed.addCategory("Certificates about to expire")
-        this.feed.addCategory("Expired Certificates")
+        this.feed.addCategory("Expired certificates")
     }
      notify(hostname, certData) {
         const id = "certcheck.polizei.nrw/#"+Math.random()*10000

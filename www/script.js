@@ -17,10 +17,9 @@ async function createHost() {
                 body: JSON.stringify({ hostname })
             })
             if (response.ok) {
-                // throw new Error(`Failed to create host: ${await response.text()}`)
                 await fetchHosts();
             } else {
-                console.error(`Failed to create host: ${await response.text()}`);
+                console.error(`Failed to create host: ${await response.text()}`)
             }
 
         } catch (error) {
@@ -32,7 +31,7 @@ async function createHost() {
 }
 
 async function deleteHost(id) {
-    const deletePrompt = confirm(`Delete host with ID: ${id}?`);
+    const deletePrompt = confirm(`Delete host with ID: ${id}?`)
     if (deletePrompt) {
         try {
             const response = await fetch(`/host/${id}`, {
@@ -68,7 +67,7 @@ async function updateHost(id, hostname) {
             if (response.ok) {
                 await fetchHosts()
             } else {
-                console.error(`Failed to update host: ${await response.text()}`);
+                console.error(`Failed to update host: ${await response.text()}`)
             }
 
         } catch (error) {
@@ -89,7 +88,7 @@ async function fetchHosts() {
         const hosts = await response.json()
         const hostList = document.getElementById('hostList')
         hostList.innerHTML = ''
-        hosts.forEach(host => {
+        hosts.forEach(host => {                                                                     //iterates through each element in hosts array
             const hostDiv = document.createElement('div')
             hostDiv.innerHTML = `<span>ID: ${host.id}, Hostname: ${host.hostname}</span>
                              <button onclick="deleteHost(${host.id})" class="btn btn-danger">Delete</button>
