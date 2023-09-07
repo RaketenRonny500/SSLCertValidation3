@@ -1,3 +1,5 @@
+// IMPORTS
+
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const Cron = require('./cron.js');
@@ -6,15 +8,15 @@ const db = new sqlite3.Database('./hosts.db');
 const auth = require('./auth.js')
 
 
-//CORS
+// MIDDLEWARE STACK
 app.use((req, res, next) => {
     res.header(`Access-Control-Allow-Origin`, `*`);
     res.header(`Access-Control-Allow-Methods`, `GET,PUT,POST,DELETE`);
     res.header(`Access-Control-Allow-Headers`, `Content-Type`);
     next();
 })
-app.use(express.json())
-app.use(express.static("www"))                                                                                                     // static?
+app.use(express.json())                                                                                                                 // parse payload as json, populate req.body
+app.use(express.static("www"))                                                                                                     // serve static (as-is) files from "www" directory
 app.use(auth)
 
 // CREATE, UPDATE

@@ -11,14 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0c6183a0-77b5-4788-86ec-9069a06ce496" name="Changes" comment="Backend done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cert.js" beforeDir="false" afterPath="$PROJECT_DIR$/Cert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cron.js" beforeDir="false" afterPath="$PROJECT_DIR$/cron.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts.db" beforeDir="false" afterPath="$PROJECT_DIR$/hosts.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rss.js" beforeDir="false" afterPath="$PROJECT_DIR$/rss.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/rss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/www/rss.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +55,10 @@
         <option name="url" value="https://github.com/RaketenRonny500/SSLCertValidation" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2023.2/javascript/typings/express/4.17.17/node_modules/@types/express/index.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/IntelliJIdea2023.2/javascript/typings/express/4.17.17/node_modules/@types/serve-static/index.d.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -180,7 +178,7 @@
       <workItem from="1693427551870" duration="25000" />
       <workItem from="1693477585822" duration="11006000" />
       <workItem from="1693944141704" duration="3000" />
-      <workItem from="1693989063899" duration="10144000" />
+      <workItem from="1693989063899" duration="20085000" />
     </task>
     <task id="LOCAL-00001" summary="HTML+EventListener+CertCheck rdy">
       <option name="closed" value="true" />
@@ -286,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693427510052</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Backend done">
+      <option name="closed" value="true" />
+      <created>1694002863820</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694002863820</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
