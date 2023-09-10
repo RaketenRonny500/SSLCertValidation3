@@ -30,7 +30,7 @@ app.post('/host/:id?', (req, res) => {
                 console.error(err.message)
                 res.status(500).send("Error updating host")
             } else {
-                res.status(200).json(rows)                                                                                         // rows?
+                res.status(200).json(rows)
             }
         });
 

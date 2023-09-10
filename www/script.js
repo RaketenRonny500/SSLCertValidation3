@@ -52,17 +52,17 @@ async function deleteHost(id) {
     }
 }
 
-async function updateHost(id, hostname) {
+async function updateHost(id) {
     const newHostname = prompt(`Please enter a new hostname for ID ${id}:`)
     if (newHostname) {
         try {
-            const response = await fetch(`/host`, {
+            const response = await fetch(`/host/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': 'Bearer ' + token
                 },
-                body: JSON.stringify({ hostname })
+                body: JSON.stringify({ hostname: newHostname })
             })
             if (response.ok) {
                 await fetchHosts()
@@ -92,10 +92,12 @@ async function fetchHosts() {
             const hostDiv = document.createElement('div')
             hostDiv.innerHTML = `<span>ID: ${host.id}, Hostname: ${host.hostname}</span>
                              <button onclick="deleteHost(${host.id})" class="btn btn-danger">Delete</button>
-                             <button onclick="updateHost(${host.id}, '${host.hostname}')" class="btn btn-warning">Edit</button><hr>`
-            hostList.appendChild(hostDiv)
+                             <button onclick="updateHost(${host.id})" class="btn btn-warning">Edit</button><hr>`
+            hostList.appendChild(hostDiv)                                                                                                   //setTimeout?
         })
     } catch (error) {
         console.error("Error getting list of hosts.", error)
     }
 }
+
+setInterval(()=> fetchHosts(), 2000)

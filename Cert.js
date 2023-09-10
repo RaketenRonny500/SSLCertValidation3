@@ -1,3 +1,5 @@
+// IMPORTS
+
 const axios = require("axios");
 const https = require('https');
 
@@ -6,6 +8,8 @@ class Cert {
     constructor(host) {
         this.host = host
     }
+
+    // METHODEN
 
     async getCertificate() {
         try {
